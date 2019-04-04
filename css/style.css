@@ -1,8 +1,72 @@
+@import url('https://fonts.googleapis.com/css?family=Archivo+Black');
+@import url('https://fonts.googleapis.com/css?family=Anonymous+Pro');
+
 body {
   /* full page gradient */
-  height: 100vh;
-  background: rgb(76, 96, 133);
-  background: linear-gradient(90deg, rgba(76, 96, 133, 1) 7%, rgba(57, 160, 237, 1) 66%, rgba(255, 255, 255, 1) 100%);
+  /* font-family: 'Archivo Black', sans-serif  */
+  font-family: 'Anonymous Pro', monospace;
+  height: 80vh;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(90deg, rgba(0, 0, 0, 1) 7%, rgba(37, 7, 71, 1) 66%, rgba(255, 255, 255, 1) 100%);
+  color: #e4e4e4;
+  /* line-height: 1.25; */
+}
+
+.circle {
+  width: 15px;
+  height: 15px;
+  background: #D0BCD5;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+/* .yin-yang {
+  width: 96px;
+  box-sizing: content-box;
+  height: 48px;
+  background: #D0BCD5;
+  border-color: #18042e;
+  border-style: solid;
+  border-width: 2px 2px 50px 2px;
+  border-radius: 100%;
+  position: relative;
+}
+
+.yin-yang:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  background: #D0BCD5;
+  border: 18px solid #18042e;
+  border-radius: 100%;
+  width: 12px;
+  height: 12px;
+  box-sizing: content-box;
+}
+
+.yin-yang:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background: #18042e;
+  border: 18px solid #D0BCD5;
+  border-radius: 100%;
+  width: 12px;
+  height: 12px;
+  box-sizing: content-box;
+}
+
+.yin-yang, .yin-yang:before, .yin-yang:after {
+  margin: 0 auto;
+} */
+h1 {
+  font-size: 24px;
+}
+
+h2 {
+  font-size: 10vmin;
 }
 
 section {
@@ -11,6 +75,19 @@ section {
   left: 50%;
   /* needs two values */
   transform: translate(-50%, -50%);
+  text-align: center;
+  width: 70%;
+}
+
+/* font-family: 'Archivo Black', sans-serif;
+font-family: 'Anonymous Pro', monospace; */
+.button {
+  /* our icons from fontawesomes are actual fonts */
+  /* change styles like text i.e font-size, font-weight, colr etc */
+  font-size: 20px;
+  color: white;
+  cursor: pointer;
+  margin: 0 20px 20px;
 }
 
 footer {
@@ -18,4 +95,14 @@ footer {
   bottom: 0%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width:650px) {
+  h2 {
+    font-size: 8vmin;
+  }
+
+  .button {
+    font-size: 30px;
+  }
 }
